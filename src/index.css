@@ -1,13 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.SidePanel {
+  position: absolute;
+  width: 237px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(180deg, #2A3799 0%, #298ACF 100%);
+}
+
+.Header {
+  position: absolute;
+  width: 185px;
+  height: 18px;
+  left: 41px;
+  top: 31px;
+
+  display: flex;
+  align-items: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+}
+
+.SidePanelRowsContainer {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 237px;
+}
+
+.SidePanelRowActive {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  border-left: #FFFFFF;
+  border: solid;
+  border-width: 0 0 0 3px;
+  background:  rgb(73, 92, 172);
+  color: white;
+  height: 40px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;font-size: 14px;
+}
+
+.SidePanelRow {
+  display: flex;
+  align-items: center;
+  padding-left: 23px;
+
+  color: white;
+  height: 40px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;font-size: 14px;
+}
+
+.SidePanelRow:hover {
+  display: flex;
+  align-items: center;
+  padding-left: 23px;
+
+  background:  rgb(73, 92, 172);
+  color: white;
+  height: 40px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;font-size: 14px;
+
+  cursor: pointer;
+}
+
+.SidePanelSubMenu .SidePanelRow {
+  padding-left: 43px;
+}
+
+div.App div.Content {
+  position: absolute;
+  left: 237px;
+  right: 0px;
+  top: 67px;
+  bottom: 0px;
+
+  background: #E8E9EF;
 }
