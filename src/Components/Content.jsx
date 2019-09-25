@@ -1,12 +1,26 @@
 var React = require('react');
 
-class Content extends React.Component {
+class ContentContainer extends React.Component {
     render() {
         return (
-            <div className='Content'>
+            <div className='ContentContainer'>
+                {this.props.children}
             </div>
         );
     }
 }
 
-module.exports = Content;
+const ContentSlide = props => {
+    return (
+        <div className='ConentSlide'>
+            <div className='SlideName'>{props.name}</div>
+            <div className='PanelDescription'>Описание</div>
+            <div className='FurtherButton'>Далее</div>
+        </div>
+    )
+}
+
+export {
+    ContentContainer,
+    ContentSlide
+}
