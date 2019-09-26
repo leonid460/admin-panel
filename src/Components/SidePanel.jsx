@@ -9,8 +9,7 @@ class SidePanel extends React.Component {
                 </span>
 
                 <div className='SidePanelRowsContainer'>
-                    <SidePanelRow value='Главная' active={true}/>
-                    <SidePanelSubMenu>
+                    <SidePanelSubMenu name='Главная'>
                         <SidePanelRow value='Игроки' />
                         <SidePanelRow value='Форум' />
                         <SidePanelRow value='Статистика' />
@@ -26,21 +25,20 @@ class SidePanel extends React.Component {
 
 const SidePanelRow = props => {
     return (
-        <>
-        {props.active &&
-            <div className='SidePanelRowActive'>{props.value}</div>
-        }
-        {!props.active && 
-            <div className='SidePanelRow'>{props.value}</div>
-        }
-        </>
+        <div className='SidePanelRow'>{props.value}</div>
     )
 }
 
 const SidePanelSubMenu = props => {
     return (
         <div className='SidePanelSubMenu'>
-            {props.children}
+            <input id={props.name+'check'} type='checkbox'/>
+            <label htmlFor={props.name+'check'} type='checkbox'>
+                <SidePanelRow value={props.name}/>
+            </label>
+            <div className="SubRowsContainer">
+                {props.children}
+            </div>
         </div>
     )
 }

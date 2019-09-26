@@ -14,7 +14,7 @@ const ContentSlide = props => {
     return (
         <div className='ConentSlide'>
             <div className='SlideName'>{props.name}</div>
-            <div className='PanelDescription'>Описание</div>
+            <div className='SlideDescription'>Описание</div>
             <div className='FurtherButton'>Далее</div>
         </div>
     )
