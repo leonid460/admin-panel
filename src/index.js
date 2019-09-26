@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import SidePanel from './Components/SidePanel.jsx';
+import {SidePanel} from './Components/SidePanel.jsx';
+import {SidePanelRow} from './Components/SidePanel.jsx';
+import {SidePanelSubMenu} from './Components/SidePanel.jsx';
 import {ContentContainer} from './Components/Content.jsx';
 import {ContentSlide} from './Components/Content.jsx';
 import TopPanel from './Components/TopPanel.jsx';
@@ -18,12 +20,35 @@ class App extends React.Component {
         return (
             <div className='App'>
                 <TopPanel userName={this.state.userName} />
-                <SidePanel />
+
+                <SidePanel>
+                    <SidePanelSubMenu name='Главная'>
+                        <SidePanelRow value='Игроки' />
+                        <SidePanelRow value='Форум' />
+                        <SidePanelRow value='Статистика' />
+                        <SidePanelRow value='Логи' />
+                    </SidePanelSubMenu>
+                    <SidePanelRow value='Игроки' />
+                    <SidePanelRow value='Форум' />
+                </SidePanel>
+                
                 <ContentContainer>
-                    <ContentSlide name='Игроки' />
-                    <ContentSlide name='Форум' />
-                    <ContentSlide name='Статистика' />
-                    <ContentSlide name='Логи' />
+                    <ContentSlide
+                        name='Игроки' 
+                        description='Описание' 
+                    />
+                    <ContentSlide 
+                        name='Форум'
+                        description='Описание'
+                    />
+                    <ContentSlide
+                        name='Статистика'
+                        description='Описание' 
+                    />
+                    <ContentSlide 
+                        name='Логи'
+                        description='Описание' 
+                    />
                 </ContentContainer>
             </div>
         );

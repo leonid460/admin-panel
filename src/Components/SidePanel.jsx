@@ -1,26 +1,17 @@
 var React = require('react');
 
-class SidePanel extends React.Component {
-    render() {
-        return (
-            <div className='SidePanel'>
-                <span className='Header'>
-                    ADMIN PANEL
-                </span>
+const SidePanel = props => {
+    return (
+        <div className='SidePanel'>
+            <span className='Header'>
+                ADMIN PANEL
+            </span>
 
-                <div className='SidePanelRowsContainer'>
-                    <SidePanelSubMenu name='Главная'>
-                        <SidePanelRow value='Игроки' />
-                        <SidePanelRow value='Форум' />
-                        <SidePanelRow value='Статистика' />
-                        <SidePanelRow value='Логи' />
-                    </SidePanelSubMenu>
-                    <SidePanelRow value='Игроки' />
-                    <SidePanelRow value='Форум' />
-                </div>
+            <div className='SidePanelRowsContainer'>
+                {props.children}
             </div>
-        )
-    } 
+        </div>
+    )
 }
 
 const SidePanelRow = props => {
@@ -43,4 +34,8 @@ const SidePanelSubMenu = props => {
     )
 }
 
-module.exports = SidePanel;
+export { 
+    SidePanel,
+    SidePanelRow,
+    SidePanelSubMenu,
+}
