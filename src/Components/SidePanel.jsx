@@ -3,15 +3,22 @@ import React from 'react';
 
 const SidePanel = props => {
     return (
+        <>
+        <input type='checkbox' id='menu-chk' />
         <div className='side-panel'>
-            <span className='header'>
-                ADMIN PANEL
-            </span>
+            <div className='header'>
+                <span>
+                    ADMIN PANEL
+                </span>
+                <label htmlFor='menu-chk' className='side-panel__hide-menu-btn'>
+                </label>
+            </div>
 
             <div className='side-panel__rows-container'>
                 {props.children}
             </div>
         </div>
+        </>
     )
 }
 

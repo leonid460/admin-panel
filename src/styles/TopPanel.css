@@ -1,10 +1,10 @@
 .top-panel {
-	height: 67px;
-	padding-right: 30px;
-
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
+	
+	height: 67px;
+	padding-right: 30px;
 
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;

@@ -1,57 +1,57 @@
 .content-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    height:100%;
-    
-    padding-top: 28px;
-    padding-left: 28px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 100%;
   
-    background: #E8E9EF;
+  padding-top: 28px;
+  padding-left: 28px;
 
-    overflow: auto;
+  background: #E8E9EF;
+
+  overflow: auto;
 }
   
 .conent-slide {
-    width: 347px;
-    height: 150px;
-    margin-right: 54px;
-    margin-bottom: 40px;
-    border-radius: 14px;
-    padding: 20px;
+  width: 347px;
+  height: 150px;
+  margin-right: 54px;
+  margin-bottom: 40px;
+  border-radius: 14px;
+  padding: 20px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background: #FFFFFF;
-    color: #1B50BB;
+  background: #FFFFFF;
+  color: #1B50BB;
 }
   
 .content-slide__name {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
 }
 
 .content-slide__description {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    margin-top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
 }
 
 .content-slide__further-button {
-    margin-top: auto;
-    margin-left: auto;
+  margin-top: auto;
+  margin-left: auto;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
