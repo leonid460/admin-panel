@@ -1,8 +1,9 @@
-var React = require('react');
+import React from 'react';
+
 
 const ContentContainer = props => {
     return (
-        <div className='ContentContainer'>
+        <div className='content-container'>
             {props.children}
         </div>
     );
@@ -10,10 +11,10 @@ const ContentContainer = props => {
 
 const ContentSlide = props => {
     return (
-        <div className='ConentSlide'>
-            <div className='SlideName'>{props.name}</div>
-            <div className='SlideDescription'>{props.description}</div>
-            <div className='FurtherButton'>Далее</div>
+        <div className='conent-slide'>
+            <div className='content-slide__name'>{props.name}</div>
+            <div className='content-slide__description'>{props.description}</div>
+            <div className='content-slide__further-button'>Далее</div>
         </div>
     )
 }

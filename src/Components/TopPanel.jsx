@@ -1,12 +1,13 @@
-var React = require('react');
+import React from 'react';
+
 
 const TopPanel = props => {
     return (
-        <div className='TopPanel' >
-            <div className='UserIcon'></div>
+        <div className='top-panel' >
+            <div className='user-icon'></div>
             {props.userName}
         </div>
     )
 }
 
-module.exports = TopPanel;
+export default TopPanel;

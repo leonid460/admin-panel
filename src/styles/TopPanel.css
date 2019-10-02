@@ -1,0 +1,27 @@
+.top-panel {
+	height: 67px;
+	padding-right: 30px;
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #1B50BB;
+}
+
+
+.user-icon {
+	margin-left: 20px;
+	width: 46px;
+	height: 46px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+	background: linear-gradient(180deg, #2A3799 0%, #298ACF 100%);
+}
