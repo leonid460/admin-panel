@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('./styles/TopPanel.css');
 @import url('./styles/SidePanel.css');
-@import url('./styles/Content.css');
+@import url('./styles/Pages/MainPage.css');
 
 
 body {

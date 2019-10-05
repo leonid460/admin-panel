@@ -1,7 +1,8 @@
 import React from 'react';
-import {SidePanel, SidePanelRow, SidePanelSubMenu} from './SidePanel';
-import {ContentContainer, ContentSlide} from './Content';
+import SidePanel from './SidePanel';
+import MainPage from './Pages/MainPage';
 import TopPanel from './TopPanel';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -15,37 +16,16 @@ class App extends React.Component {
     render() {
         return (
             <div className='app'>
-                <SidePanel>
-                    <SidePanelSubMenu name='Главная'>
-                        <SidePanelRow value='Игроки' />
-                        <SidePanelRow value='Форум' />
-                        <SidePanelRow value='Статистика' />
-                        <SidePanelRow value='Логи' />
-                    </SidePanelSubMenu>
-                    <SidePanelRow value='Игроки' />
-                    <SidePanelRow value='Форум' />
-                </SidePanel>
-                
+                <SidePanel />
+
                 <div className='main-container'>
-                <TopPanel userName={this.state.userName} />
-                <ContentContainer>
-                    <ContentSlide
-                        name='Игроки' 
-                        description='Описание' 
-                    />
-                    <ContentSlide 
-                        name='Форум'
-                        description='Описание'
-                    />
-                    <ContentSlide
-                        name='Статистика'
-                        description='Описание' 
-                    />
-                    <ContentSlide 
-                        name='Логи'
-                        description='Описание' 
-                    />
-                </ContentContainer>
+                    <TopPanel userName={this.state.userName} />
+                    
+                    <BrowserRouter>
+                    <Switch>
+                        <Route exact path="/" component={MainPage}/>
+                    </Switch>
+                    </BrowserRouter>
                 </div>
             </div>
         );

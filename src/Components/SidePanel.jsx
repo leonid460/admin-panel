@@ -15,7 +15,14 @@ const SidePanel = props => {
             </div>
 
             <div className='side-panel__rows-container'>
-                {props.children}
+                <SidePanelSubMenu name='Главная'>
+                    <SidePanelRow value='Игроки' />
+                    <SidePanelRow value='Форум' />
+                    <SidePanelRow value='Статистика' />
+                    <SidePanelRow value='Логи' />
+                </SidePanelSubMenu>
+                <SidePanelRow value='Игроки' />
+                <SidePanelRow value='Форум' />
             </div>
         </div>
         </>
@@ -42,8 +49,4 @@ const SidePanelSubMenu = props => {
     )
 }
 
-export { 
-    SidePanel,
-    SidePanelRow,
-    SidePanelSubMenu,
-}
+export default SidePanel;

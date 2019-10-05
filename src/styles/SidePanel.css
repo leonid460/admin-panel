@@ -126,7 +126,7 @@
     width: 100vw;
     height: 100vh;
     left: -100%;
-    transition: 0.7s;
+    transition: 0.4s;
   }
   
   .side-panel__row {

@@ -1,4 +1,4 @@
-.content-container {
+.main-page {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -13,7 +13,7 @@
   overflow: auto;
 }
   
-.conent-slide {
+.main-page__slide {
   width: 347px;
   height: 150px;
   margin-right: 54px;
@@ -28,7 +28,7 @@
   color: #1B50BB;
 }
   
-.content-slide__name {
+.main-page__slide__name {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -36,7 +36,7 @@
   line-height: 18px;
 }
 
-.content-slide__description {
+.main-page__slide__description {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -45,7 +45,7 @@
   margin-top: 10px;
 }
 
-.content-slide__further-button {
+.main-page__slide__further-button {
   margin-top: auto;
   margin-left: auto;
 
