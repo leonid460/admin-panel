@@ -2,6 +2,10 @@ import React from 'react';
 import SidePanel from './SidePanel';
 import MainPage from './Pages/MainPage';
 import TopPanel from './TopPanel';
+import PlayersPage from './Pages/PlayersPage'
+import ForumPage from './Pages/ForumPage';
+import StatsPage from './Pages/StatsPage';
+import LogsPage from './Pages/LogsPage';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
@@ -15,19 +19,23 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='app'>
-                <SidePanel />
+            <BrowserRouter>
+                <div className='app'>
+                    <SidePanel />
 
-                <div className='main-container'>
-                    <TopPanel userName={this.state.userName} />
-                    
-                    <BrowserRouter>
-                    <Switch>
-                        <Route exact path="/" component={MainPage}/>
-                    </Switch>
-                    </BrowserRouter>
+                    <div className='main-container'>
+                        <TopPanel userName={this.state.userName} />
+                        
+                        <Switch>
+                            <Route exact path="/" component={MainPage}/>
+                            <Route path="/players" component={PlayersPage}/>
+                            <Route path="/forum" component={ForumPage}/>
+                            <Route path="/stats" component={StatsPage}/>
+                            <Route path="/logs" component={LogsPage}/>
+                        </Switch>
+                    </div>
                 </div>
-            </div>
+            </BrowserRouter>
         );
     }
 }

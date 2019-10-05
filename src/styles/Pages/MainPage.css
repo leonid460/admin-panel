@@ -55,3 +55,8 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+.main-page__slide__further-button a {
+  color: inherit;
+  text-decoration: none;
+}

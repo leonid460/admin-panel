@@ -22,7 +22,7 @@
   color: #FFFFFF;
 }
 
-.header span {
+.header a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width:960px) {
-  .header span {
+  .header a {
     margin-left: 20px;
     justify-content: left;
   }
@@ -146,4 +146,9 @@
   #menu-chk:checked + .side-panel {
     left: 0;
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
