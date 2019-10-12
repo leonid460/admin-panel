@@ -1,11 +1,11 @@
 import React from 'react';
 import SidePanel from './SidePanel';
-import MainPage from './Pages/MainPage';
+import MainPage from './Pages/MainPage/MainPage';
 import TopPanel from './TopPanel';
-import PlayersPage from './Pages/PlayersPage'
-import ForumPage from './Pages/ForumPage';
-import StatsPage from './Pages/StatsPage';
-import LogsPage from './Pages/LogsPage';
+import PlayersPage from './Pages/PlayersPage/PlayersPage'
+import ForumPage from './Pages/ForumPage/ForumPage';
+import StatsPage from './Pages/StatsPage/StatsPage';
+import LogsPage from './Pages/LogsPage/LogsPage';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 

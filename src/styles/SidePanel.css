@@ -55,6 +55,13 @@
 }
 
 
+.side-panel__row-active .side-panel__row {
+  padding-left: 21px;
+  border-left: 5px solid #FFFFFF;
+  background:  rgb(73, 92, 172);
+}
+
+
 .side-panel__row:hover {
   background:  rgb(73, 92, 172);
 }

@@ -1,0 +1,176 @@
+.players-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
+  height: 100%;
+  
+  padding: 28px;
+  padding-bottom: 0;
+
+  background: #E8E9EF;
+
+  overflow: auto;
+}
+
+
+.players-page__form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+
+.players-page__form__player-info,
+.players-page__form__reg-auth-info {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  margin-right: 100px;
+}
+
+
+.players-page__form__input-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #656565;
+}
+
+
+.players-page__form__input-field input {
+  width: 237px;
+  height: 31px;
+
+  padding-left: 10px;
+  
+  border: 1px solid #9B9B9B;
+  border-radius: 5px;
+}
+
+
+.players-page__form__input-field input[type='date'] {
+  width: 237px;
+  height: 33px;
+  
+  padding-left: 10px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #656565;
+}
+
+
+.players-table__change-page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+
+  color: blue;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+.players-table__change-page {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+
+.players-table table {
+  width: 100%;
+
+  background: white;
+  
+  border-radius: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px; 
+}
+
+
+.players-page th,td {
+  height: 42px;
+
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+} 
+
+
+.players-page th {
+  color: #888888;
+}
+
+
+.players-page td {
+  color: #1B50BB;
+}
+
+
+.players-table__button {
+  width: 131px;
+  height: 42px;
+}
+
+.players-page__form__filter-button,
+.players-table__button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 13px 4px;
+  border-radius: 5px;
+
+  background: linear-gradient(90deg, #2A3799 0%, #298ACF 100%);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+
+  cursor: pointer;
+}
+
+
+.players-page__form__filter-button {
+  width: 131px;
+  height: 42px;
+
+  margin-top: auto;
+}
+
+
+.players-page__border {
+  background: #b3b3b3;
+
+  width: 100%;
+  min-height: 3px;
+  height: 3px;
+
+  border: none;
+  margin-bottom: 35px;
+}

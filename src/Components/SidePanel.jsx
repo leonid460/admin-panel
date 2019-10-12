@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 
 const SidePanel = () => {
@@ -8,11 +8,7 @@ const SidePanel = () => {
         <input type='checkbox' id='menu-chk' />
         <div className='side-panel'>
             <div className='header'>
-                <Link to='/'>
-                    <span>
-                        ADMIN PANEL
-                    </span>
-                </Link>
+                <Link to='/'><span>ADMIN PANEL</span></Link>
                 <label htmlFor='menu-chk' className='side-panel__hide-menu-btn'>
                 </label>
             </div>
@@ -24,8 +20,8 @@ const SidePanel = () => {
                     <SidePanelRow value='Статистика' path='/stats' />
                     <SidePanelRow value='Логи' path='/logs' />
                 </SidePanelSubMenu>
-                <SidePanelRow value='Игроки' path='#' />
-                <SidePanelRow value='Форум' path='#' />
+                <SidePanelRow value='Игроки' path='/players' />
+                <SidePanelRow value='Форум' path='/forum' />
             </div>
         </div>
         </>
@@ -34,11 +30,11 @@ const SidePanel = () => {
 
 const SidePanelRow = props => {
     return (
-        <Link to={props.path}>
+        <NavLink to={props.path} activeClassName="side-panel__row-active"> 
             <div className='side-panel__row'>
                 {props.value}
             </div>
-        </Link>
+        </NavLink>
     )
 }
 
@@ -50,7 +46,6 @@ const SidePanelSubMenu = props => {
                 <div className='side-panel__row'>
                     {props.name}
                 </div>
-                {/* <SidePanelRow value={props.name}/> */}
             </label>
             <div className="sub-menu__rows-container">
                 {props.children}
